@@ -1,0 +1,63 @@
+CREATE TABLE Genres (
+    genreId INT PRIMARY KEY IDENTITY(1,1),
+    genreName NVARCHAR(255) NOT NULL
+);
+
+CREATE TABLE Authors (
+    authorId INT PRIMARY KEY IDENTITY(1,1),
+    authorName NVARCHAR(255) NOT NULL
+);
+
+CREATE TABLE Books (
+    bookId INT PRIMARY KEY IDENTITY(1,1),
+    bookTitle NVARCHAR(255) NOT NULL,
+    genre INT FOREIGN KEY REFERENCES Genres(genreId),
+    author INT FOREIGN KEY REFERENCES Authors(authorId),
+    price DECIMAL(10, 2) NOT NULL,
+    image VARBINARY(MAX) NOT NULL,
+	description NVARCHAR(MAX) NOT NULL
+);
+
+CREATE TABLE Users (
+    userId INT PRIMARY KEY IDENTITY(1,1),
+    email NVARCHAR(255) NOT NULL UNIQUE,
+    passwordHash NVARCHAR(MAX) NOT NULL, 
+    firstName NVARCHAR(255) NOT NULL,
+    lastName NVARCHAR(255) NOT NULL,
+    createdAt DATETIME DEFAULT GETDATE(), 
+    isAdmin BIT DEFAULT 0 
+);
+
+CREATE TABLE Carts (
+    cartId INT PRIMARY KEY IDENTITY(1,1),
+    userId INT NOT NULL FOREIGN KEY REFERENCES Users(userId),
+    createdAt DATETIME DEFAULT GETDATE()
+);
+
+CREATE TABLE CartItems (
+    cartItemId INT PRIMARY KEY IDENTITY(1,1),
+    cartId INT NOT NULL FOREIGN KEY REFERENCES Carts(cartId),
+    bookId INT NOT NULL FOREIGN KEY REFERENCES Books(bookId),
+    quantity INT NOT NULL DEFAULT 1
+);
+
+CREATE TABLE Orders (
+    orderId INT PRIMARY KEY IDENTITY(1,1),
+    userId INT NOT NULL FOREIGN KEY REFERENCES Users(userId),
+    createdAt DATETIME DEFAULT GETDATE(),
+    phoneNumber NVARCHAR(20) NOT NULL,
+    email NVARCHAR(255) NOT NULL,
+    firstName NVARCHAR(255) NOT NULL,
+    lastName NVARCHAR(255) NOT NULL,
+	country NVARCHAR(255) NOT NULL,
+    city NVARCHAR(255) NOT NULL,
+    comments NVARCHAR(MAX) NULL
+);
+
+CREATE TABLE OrderItems (
+    orderItemId INT PRIMARY KEY IDENTITY(1,1),
+    orderId INT NOT NULL FOREIGN KEY REFERENCES Orders(orderId),
+    bookId INT NOT NULL FOREIGN KEY REFERENCES Books(bookId),
+    quantity INT NOT NULL,
+    price DECIMAL(10, 2) NOT NULL
+);

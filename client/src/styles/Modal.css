@@ -1,0 +1,164 @@
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-container {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+.modal-container h2 {
+    margin-bottom: 0px;
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.modal-container p {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+
+.modal-container input,
+.modal-container select,
+.modal-container textarea,
+.modal-container button {
+    width: calc(100% - 20px);
+    max-width: 100%;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+
+.modal-container input,
+.modal-container select,
+.modal-container textarea {
+    background-color: #fff;
+    color: #333;
+    transition: border-color 0.3s;
+}
+
+.modal-container button {
+    background-color: black;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.modal-container button:hover {
+    background-color: #444;
+}
+
+.modal-container select {
+    appearance: none;
+    cursor: pointer;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+.modal-container input:focus,
+.modal-container select:focus,
+.modal-container textarea:focus {
+    outline: none;
+    border-color: black; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.modal-container button.modal-button {
+    background-color: black;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.modal-container button.modal-button:hover {
+    background-color: #444;
+}
+
+.modal-link {
+    color: black;
+    cursor: pointer;
+    text-decoration: underline;
+    font-size: 14px;
+    margin-top: 5px;
+    display: inline-block;
+    text-align: center;
+}
+
+.modal-error-message {
+    color: red;
+    font-size: 14px;
+    margin: 0;
+    text-align: center;
+}
+
+.modal-link:hover {
+    color: #444;
+}
+
+.file-input-container {
+    display: flex;
+    align-items: center;
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    height: 42px; 
+    margin: 0 auto; 
+}
+
+.file-upload-label {
+    background-color: black;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-right: 10px;
+    white-space: nowrap;
+}
+
+.file-upload-label:hover {
+    background-color: #444;
+}
+
+.file-upload-input {
+    display: none; 
+}
+
+.file-name {
+    font-size: 14px;
+    color: #333;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    flex-grow: 1;
+}
+

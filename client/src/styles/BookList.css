@@ -1,0 +1,43 @@
+.book-list-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #fff;
+}
+
+.book-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.book-list p {
+    text-align: center;
+    color: #888;
+}
+
+
+.no-books-message {
+    color: #888;
+    font-size: 16px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+.top-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.top-pagination-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+

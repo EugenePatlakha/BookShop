@@ -1,0 +1,108 @@
+.search-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    background-color: black;
+    padding: 10px 20px;
+}
+
+.search-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center; 
+    position: relative;
+}
+
+.input-wrapper {
+    position: relative;
+    display: inline-block; 
+    width: 60%;
+}
+
+.search-bar input {
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+
+.search-bar input:focus {
+    outline: none;
+    border-color: black; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.user-info {
+    display: flex; 
+    align-items: center;
+    gap: 10px; 
+}
+
+.user-name {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    margin-right: 20px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.login-button-search-bar {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login-button-search-bar:hover {
+    background-color: #aaaaaa;
+}
+
+.logout-button-search-bar {
+    background-color: red;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 10px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.logout-button-search-bar:hover {
+    background-color: darkred;
+}
+
+.cart-button-search-bar {
+    padding: 8px 16px;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.cart-button-search-bar:hover {
+    background-color: #aaaaaa; 
+}
