@@ -19,9 +19,14 @@ The backend is built using **Node.js, Express, and SQL Server**, offering a robu
 - **Axios**
 
 🎨 **Website appearance** 
-![Снимок экрана 2024-12-29 153344](https://github.com/user-attachments/assets/4160baf6-7f8b-47fd-a25d-952ec5068dbe)
-![Снимок экрана 2024-12-29 153458](https://github.com/user-attachments/assets/26a99519-0b02-4306-8cbe-2e31e146a93d)
-![Снимок экрана 2025-01-01 164131](https://github.com/user-attachments/assets/6bbd449a-2672-4ebb-8454-a9a3b7f4d7ee)
-![Снимок экрана 2025-01-01 165705](https://github.com/user-attachments/assets/6bf66d65-a444-4f3e-b6c3-92a792070b4e)
-![Снимок экрана 2025-01-01 175011](https://github.com/user-attachments/assets/1e725411-a197-4635-b220-e8ad72cd6958)
-![Снимок экрана 2025-01-01 175434](https://github.com/user-attachments/assets/cc4d5861-820b-45b5-9fe4-0f9601e90698)
+![Снимок экрана 2024-12-29 153344](https://github.com/user-attachments/assets/45f33442-3efd-48b7-a9af-4f716ef438c9)
+
+![Снимок экрана 2024-12-29 153458](https://github.com/user-attachments/assets/31f05a8f-1a4a-4f3e-9edd-7618c38ddbb0)
+
+![Снимок экрана 2025-01-01 164131](https://github.com/user-attachments/assets/8a1f834e-e4f9-4f0d-be1f-0a5f1d19d42f)
+
+![Снимок экрана 2025-01-01 165705](https://github.com/user-attachments/assets/f1e0a2a6-71c4-4d1e-b960-4d90a6949987)
+
+![Снимок экрана 2025-01-01 175011](https://github.com/user-attachments/assets/a01d3dcf-0b04-4db4-87b8-8ac916c4a82b)
+
+![Снимок экрана 2025-01-01 175408](https://github.com/user-attachments/assets/479134c1-2aec-408d-a3f1-a3680f664d75)
