@@ -18,7 +18,7 @@ The backend is built using **Node.js, Express, and SQL Server**, offering a robu
 - **JavaScript** 
 - **Axios**
 
-🎨 **Website appearance** 
+🎨 **Website Appearance** 
 ![Снимок экрана 2024-12-29 153344](https://github.com/user-attachments/assets/45f33442-3efd-48b7-a9af-4f716ef438c9)
 
 ![Снимок экрана 2024-12-29 153458](https://github.com/user-attachments/assets/31f05a8f-1a4a-4f3e-9edd-7618c38ddbb0)
